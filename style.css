@@ -17,11 +17,7 @@
 html{
     font-family: 'Rubik', 'Material Icons', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: var(--secondary-color);
-}
-
-body{
-    display: flex;
-    flex-direction: column;
+    width: 100%;
 }
 
 a{
@@ -45,7 +41,7 @@ a{
     width: 100%;
     max-width: 1400px;
     padding: 2em;
-    margin:0px auto 0.25rem;
+    margin: 0px auto 0.25rem;
 
 }
 
@@ -94,24 +90,20 @@ a{
 }
 
 
-
-
-
-//* MAIN SECTION *//
+/* MAIN SECTION */
 
 .main-container{
     display: flex;
+    flex-direction: column;
 }
 
 .main-section{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1250px;
-    margin: 0;
-    padding-right: 40px;
-    padding-left: 15%;
-    padding-top: 120px;
+    max-width: 1400px;
+    padding-top: 100px;
+    margin: 0 auto;
 }
 
 .main-title{
@@ -120,6 +112,8 @@ a{
     font-size: 48px;
     line-height: 1.25;
     padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .second-title{
@@ -127,6 +121,8 @@ a{
     font-size: 24px;
     line-height: 30px;
     padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .link-color-blue{
@@ -172,18 +168,10 @@ a{
 }
 
 
-.projects-section{
-    display: flex;
-    justify-content: flex-start;
-    width: 70%;
-    margin: 0 auto;
-
-
-}
-
 .section-title{
     color: var(--primary-color);
     padding-top: 30px;
+    padding-left: 20px;
     font-size: 28px;
     font-family: 'Work Sans', sans-serif;
 }
@@ -192,20 +180,33 @@ a{
 
 /* PROJECTS WORKS */
 
-
 .portfolio{
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     max-width: 1400px;
-    margin: auto;
-    padding-top: 30px;
+    margin: 0 auto;
+
 }
 
-.card1, .card2{
-    max-width: 640px;
+.portfolio-container{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1400px;
+    padding-top: 30px;
+    margin: 0 auto;
 }
+
+
+.card1, .card2{
+    width: 790px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 50px;
+}
+
 .card-cover{
-    width: 640px;
+    width: 100%;
+
 }
 
 .card-title{
@@ -238,18 +239,48 @@ a{
 
 /*MEDIA QUERIES*/
 
-@media (max-width: 640px) {
+@media (max-width: 600px) {
     
     .text{
         display: none;
     }
-    .portfolio{
+
+    .portfolio-container{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    margin: auto;
+    margin: 0 auto;
     padding-top: 30px;
     }
+    .main-section, .projects-section{
+        padding-top: 10px;
+    }
 
-
+    .card1, .card2{
+        width: 350px;
+        padding-right: 18px;
+        padding-left: 18px;
+        padding-bottom: 50px;
+    }
   }
+
+/*
+  @media (max-width: 1200px) {
+    
+    .text{
+        display: none;
+    }
+
+    .portfolio-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 auto;
+    padding-top: 30px;
+    }
+    .main-section, .projects-section{
+        padding-top: 100px;
+    }
+  }
+
+  */
