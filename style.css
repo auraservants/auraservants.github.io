@@ -195,7 +195,13 @@ a{
     padding-top: 30px;
     margin: 0 auto;
 }
-
+.portfolio-container2{
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1400px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
 
 .card1, .card2{
     width: 790px;
