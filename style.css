@@ -1,0 +1,255 @@
+:root{
+    --primary-color: #ffffff;
+    --secondary-color: #1A202C; 
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.light-theme{
+    --primary-color: #ffffff;
+    --secondary-color: #1A202C;  
+}
+
+html{
+    font-family: 'Rubik', 'Material Icons', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    background-color: var(--secondary-color);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header-container{
+    background-color: rgba(29, 30, 37, 0.26);
+    width: 100%;
+    backdrop-filter: saturate(130%) blur(35px);
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0);
+    position: fixed;
+    z-index: 10;
+    top:0;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+    padding: 2em;
+    margin:0px auto 0.25rem;
+
+}
+
+.menu ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu li a {
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-decoration: none;
+    padding: .5em 1em;
+}
+
+.menu li .material-icons{
+    color: var(--primary-color);
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
+
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-img{
+    width: 80px;
+    height: 80px;
+
+}
+
+.text{
+    color:var(--primary-color);
+    font-size: 24px;
+    padding-left: 10px;
+}
+
+
+
+
+
+//* MAIN SECTION *//
+
+.main-container{
+    display: flex;
+}
+
+.main-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 1250px;
+    margin: 0;
+    padding-right: 40px;
+    padding-left: 15%;
+    padding-top: 120px;
+}
+
+.main-title{
+    color:var(--primary-color);
+    font-family: 'Work Sans', sans-serif;
+    font-size: 48px;
+    line-height: 1.25;
+    padding-top: 50px;
+}
+
+.second-title{
+    color: rgb(160, 174, 192);
+    font-size: 24px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.link-color-blue{
+    color: rgb(56, 163, 224);
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link-color-orange{
+    color: #D37754;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link-color-green{
+    color: #109D59;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link-color-violet{
+    color: #7D61E0;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link-color-yellow{
+    color: #FFE600;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link-color-greenie{
+    color: #4DE4CF;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.link-color-pink{
+    color: #E51B3E;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+
+.projects-section{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    margin: 0 auto;
+
+
+}
+
+.section-title{
+    color: var(--primary-color);
+    padding-top: 30px;
+    font-size: 28px;
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+/* PROJECTS WORKS */
+
+
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1400px;
+    margin: auto;
+    padding-top: 30px;
+}
+
+.card1, .card2{
+    max-width: 640px;
+}
+.card-cover{
+    width: 640px;
+}
+
+.card-title{
+    color: var(--primary-color);
+    font-size: 26px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Rubik', 'Material Icons', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.card-tags{
+    color: rgb(160, 174, 192);
+    font-weight: 300;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+
+
+.card-description{
+    color: rgb(160, 174, 192);
+    font-size: 18px;
+    padding-top: 10px;
+    font-weight: normal;
+    font-family: 'Rubik', 'Material Icons', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    line-height: 1.30;
+}
+
+
+
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 640px) {
+    
+    .text{
+        display: none;
+    }
+    .portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: auto;
+    padding-top: 30px;
+    }
+
+
+  }
