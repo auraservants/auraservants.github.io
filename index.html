@@ -30,7 +30,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="https://drive.google.com/file/d/1ey42qzwKgfGiN9T3i612hRrWRoM7T43e/view?usp=sharing" target="_blank">Resume</a></li>
           <li><a href="mailto:auraservants@gmail.com">Contact</a></li>
-          <li><span class="material-icons">light_mode</span></li>
+          <li><img src="/images/sun (1).png" alt="sun icon" class="icon" id="icon"></li>
         </ul>
       </nav>
     </header>
@@ -105,16 +105,19 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     <footer></footer>
+    <script>
+      var icon = document.getElementById("icon");
+      icon.onclick = function(){
+        document.body.classList.toggle("light-theme");
+        if(document.body.classList.contains("light-theme")){
+          icon.src = "/images/moon.png";
+        } else{
+          icon.src= "/images/sun (1).png"
+        }
+      }
+
+
+    </script>
   </body>
 </html>

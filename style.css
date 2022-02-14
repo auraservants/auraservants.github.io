@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #ffffff;
-    --secondary-color: #1A202C; 
+    --primary-color: #FFFFFF;
+    --secondary-color: #1A202C;  
 }
 
 *{
@@ -10,8 +10,8 @@
 }
 
 .light-theme{
-    --primary-color: #ffffff;
-    --secondary-color: #1A202C;  
+    --primary-color: #1A202C;
+    --secondary-color: #FFFFFF;  
 }
 
 html{
@@ -20,6 +20,9 @@ html{
     width: 100%;
 }
 
+body{
+    background-color: var(--secondary-color);
+}
 a{
     text-decoration: none;
 }
@@ -33,6 +36,7 @@ a{
     z-index: 10;
     top:0;
 }
+
 
 .menu{
     display: flex;
@@ -54,22 +58,30 @@ a{
 }
 
 .menu li a {
-    color: white;
+    color: var(--primary-color);
     font-size: 20px;
     display: block;
     text-decoration: none;
     padding: .5em 1em;
 }
 
-.menu li .material-icons{
+/*.menu li .material-icons{
     color: var(--primary-color);
     font-size: 20px;
     padding: 10px;
     border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.08);
     cursor: pointer;
+}*/
 
+.icon{
+    width: 38px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.08);
+    cursor: pointer;
 }
+
 
 .logo{
     display: flex;
@@ -111,7 +123,7 @@ a{
     font-family: 'Work Sans', sans-serif;
     font-size: 48px;
     line-height: 1.25;
-    padding-top: 50px;
+    padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
 }
