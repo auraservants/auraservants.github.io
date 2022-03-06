@@ -1,44 +1,44 @@
-:root{
+:root {
     --primary-color: #FFFFFF;
-    --secondary-color: #1A202C;  
+    --secondary-color: #1A202C;
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.light-theme{
+.light-theme {
     --primary-color: #1A202C;
-    --secondary-color: #FFFFFF;  
+    --secondary-color: #FFFFFF;
 }
 
-html{
+html {
     font-family: 'Rubik', 'Material Icons', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     background-color: var(--secondary-color);
     width: 100%;
 }
 
-body{
+body {
     background-color: var(--secondary-color);
 }
-a{
+
+a {
     text-decoration: none;
 }
 
-.header-container{
+.header-container {
     background-color: rgba(29, 30, 37, 0.26);
     width: 100%;
     backdrop-filter: saturate(130%) blur(35px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0);
     position: fixed;
     z-index: 10;
-    top:0;
+    top: 0;
 }
 
-
-.menu{
+.menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,7 +46,6 @@ a{
     max-width: 1400px;
     padding: 2em;
     margin: 0px auto 0.25rem;
-
 }
 
 .menu ul {
@@ -65,6 +64,7 @@ a{
     padding: .5em 1em;
 }
 
+
 /*.menu li .material-icons{
     color: var(--primary-color);
     font-size: 20px;
@@ -74,7 +74,7 @@ a{
     cursor: pointer;
 }*/
 
-.icon{
+.icon {
     width: 38px;
     padding: 10px;
     border-radius: 8px;
@@ -82,21 +82,18 @@ a{
     cursor: pointer;
 }
 
-
-.logo{
+.logo {
     display: flex;
     align-items: center;
 }
 
-
-.logo-img{
+.logo-img {
     width: 80px;
     height: 80px;
-
 }
 
-.text{
-    color:var(--primary-color);
+.text {
+    color: var(--primary-color);
     font-size: 24px;
     padding-left: 10px;
 }
@@ -104,12 +101,12 @@ a{
 
 /* MAIN SECTION */
 
-.main-container{
+.main-container {
     display: flex;
     flex-direction: column;
 }
 
-.main-section{
+.main-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -118,8 +115,8 @@ a{
     margin: 0 auto;
 }
 
-.main-title{
-    color:var(--primary-color);
+.main-title {
+    color: var(--primary-color);
     font-family: 'Work Sans', sans-serif;
     font-size: 48px;
     line-height: 1.25;
@@ -128,7 +125,7 @@ a{
     padding-right: 20px;
 }
 
-.second-title{
+.second-title {
     color: rgb(160, 174, 192);
     font-size: 24px;
     line-height: 30px;
@@ -137,50 +134,49 @@ a{
     padding-right: 20px;
 }
 
-.link-color-blue{
+.link-color-blue {
     color: rgb(56, 163, 224);
     font-weight: bold;
     font-size: 24px;
 }
 
-.link-color-orange{
-    color: #D37754;
+.link-color-rose {
+    color: #e661b2;
     font-weight: bold;
     font-size: 24px;
 }
 
-.link-color-green{
+.link-color-green {
     color: #109D59;
     font-weight: bold;
     font-size: 24px;
 }
 
-.link-color-violet{
+.link-color-violet {
     color: #7D61E0;
     font-weight: bold;
     font-size: 24px;
 }
 
-.link-color-yellow{
+.link-color-yellow {
     color: #FFE600;
     font-weight: bold;
     font-size: 24px;
 }
 
-.link-color-greenie{
+.link-color-greenie {
     color: #4DE4CF;
     font-weight: bold;
     font-size: 24px;
 }
 
-.link-color-pink{
+.link-color-pink {
     color: #E51B3E;
     font-weight: bold;
     font-size: 24px;
 }
 
-
-.section-title{
+.section-title {
     color: var(--primary-color);
     padding-top: 30px;
     padding-left: 20px;
@@ -189,25 +185,16 @@ a{
 }
 
 
-
 /* PROJECTS WORKS */
 
-.portfolio{
+.portfolio {
     display: flex;
     flex-direction: column;
     max-width: 1400px;
     margin: 0 auto;
-
 }
 
-.portfolio-container{
-    display: flex;
-    justify-content: flex-start;
-    max-width: 1400px;
-    padding-top: 30px;
-    margin: 0 auto;
-}
-.portfolio-container2{
+.portfolio-container {
     display: flex;
     justify-content: flex-start;
     max-width: 1400px;
@@ -215,19 +202,27 @@ a{
     margin: 0 auto;
 }
 
-.card1, .card2{
+.portfolio-container2 {
+    display: flex;
+    justify-content: flex-start;
+    max-width: 1400px;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+.card1,
+.card2 {
     width: 790px;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 50px;
 }
 
-.card-cover{
+.card-cover {
     width: 100%;
-
 }
 
-.card-title{
+.card-title {
     color: var(--primary-color);
     font-size: 26px;
     padding-top: 10px;
@@ -235,15 +230,14 @@ a{
     font-family: 'Rubik', 'Material Icons', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
-.card-tags{
+.card-tags {
     color: rgb(160, 174, 192);
     font-weight: 300;
     text-transform: uppercase;
     padding-top: 10px;
 }
 
-
-.card-description{
+.card-description {
     color: rgb(160, 174, 192);
     font-size: 18px;
     padding-top: 10px;
@@ -253,34 +247,32 @@ a{
 }
 
 
-
-
 /*MEDIA QUERIES*/
 
 @media (max-width: 600px) {
-    
-    .text{
+    .text {
         display: none;
     }
-
-    .portfolio-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding-top: 30px;
+    .portfolio-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0 auto;
+        padding-top: 30px;
     }
-    .main-section, .projects-section{
+    .main-section,
+    .projects-section {
         padding-top: 10px;
     }
-
-    .card1, .card2{
+    .card1,
+    .card2 {
         width: 350px;
         padding-right: 18px;
         padding-left: 18px;
         padding-bottom: 50px;
     }
-  }
+}
+
 
 /*
   @media (max-width: 1200px) {
