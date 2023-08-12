@@ -1,6 +1,6 @@
 :root {
     --primary-color: #FFFFFF;
-    --secondary-color: #1A202C;
+    --secondary-color: #1f242f;
 }
 
 * {
@@ -11,7 +11,7 @@
 }
 
 .light-theme {
-    --primary-color: #1A202C;
+    --primary-color: #1f242f;
     --secondary-color: #FFFFFF;
 }
 
@@ -29,8 +29,10 @@ a {
     text-decoration: none;
 }
 
+
+
 .header-container {
-    background-color: rgba(29, 30, 37, 0.26);
+    background-color: rgb(29 30 37 / 5%);
     width: 100%;
     backdrop-filter: saturate(130%) blur(35px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0);
@@ -228,6 +230,16 @@ a {
     font-family: 'Rubik', 'Material Icons', "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
+.card-title a{
+    color: #ffffff;
+}
+
+.card-title a:visited{
+    color: #ffffff;
+}
+
+
+
 .card-tags {
     color: rgb(160, 174, 192);
     font-weight: 300;
@@ -244,13 +256,21 @@ a {
     line-height: 1.30;
 }
 
+div.links{
+    text-align: center;
+    padding-bottom: 2em;
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
 footer h4{
     color: #ffffff;
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
     text-align: center;
-    padding: 6em 2em 2em 2em;
+    padding-top: 2em;
 }
 
 .footer-links{
@@ -258,11 +278,26 @@ footer h4{
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
+    text-align: center;
 }
 
 .footer-links:hover{
     text-decoration: underline;
 }
+
+hr{
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ffffff21;
+    margin: 1em 4em;
+    padding: 0;
+}
+
+/* SECTION WORK */
+
+
+
 
 
 /*MEDIA QUERIES*/
@@ -270,7 +305,7 @@ footer h4{
 
 
 @media (max-width: 600px) {
-     .menu{
+    .menu{
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -297,7 +332,6 @@ footer h4{
         padding-top: 30px;
         align-items: center;
     } 
-
     
     .main-section {
         padding: 8em 2em 0 2em;
@@ -345,7 +379,7 @@ footer h4{
 
 @media (max-width: 800px) {
     .main-container {
-      flex-direction: column;
+        flex-direction: column;
     }
     
 }
