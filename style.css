@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 .light-theme {
@@ -43,7 +44,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 2em 3em 2em 3em;
+    padding: 1em 3em;
     margin: 0px auto 0.25rem;
 }
 
@@ -90,6 +91,11 @@ a {
 
 /* MAIN SECTION */
 
+.wrapper {
+    margin: auto;
+    max-width: 75rem;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -100,7 +106,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 11em 27em 0 2em;
+    padding: 11em 2em 0 2em;
     margin: 0 auto;
     width: 100%;
 }
