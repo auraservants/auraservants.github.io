@@ -43,8 +43,7 @@ a {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1400px;
-    padding: 2em;
+    padding: 2em 3em 2em 3em;
     margin: 0px auto 0.25rem;
 }
 
@@ -58,27 +57,17 @@ a {
 
 .menu li a {
     color: var(--primary-color);
-    font-size: 20px;
+    font-size: 16px;
     display: block;
     text-decoration: none;
     padding: .5em 1em;
 }
 
-
-/*.menu li .material-icons{
-    color: var(--primary-color);
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: rgba(255, 255, 255, 0.08);
-    cursor: pointer;
-}*/
-
 .icon {
     width: 38px;
     padding: 10px;
     border-radius: 8px;
-    background-color: rgba(255, 255, 255, 0.08);
+    background-color: rgba(255, 255, 255, 0.15);
     cursor: pointer;
 }
 
@@ -104,15 +93,16 @@ a {
 .main-container {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 .main-section {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    max-width: 1400px;
-    padding-top: 100px;
+    padding: 11em 27em 0 2em;
     margin: 0 auto;
+    width: 100%;
 }
 
 .main-title {
@@ -120,7 +110,6 @@ a {
     font-family: 'Work Sans', sans-serif;
     font-size: 48px;
     line-height: 1.25;
-    padding-top: 80px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -190,29 +179,32 @@ a {
 .portfolio {
     display: flex;
     flex-direction: column;
-    max-width: 1400px;
     margin: 0 auto;
+    width: 100%;
+    padding: 1em 2em 1em 2em;
 }
 
 .portfolio-container {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    max-width: 1400px;
     padding-top: 30px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .portfolio-container2 {
     display: flex;
+    flex-direction: row;
     justify-content: flex-start;
-    max-width: 1400px;
     padding-top: 30px;
     margin: 0 auto;
+    width: 100%;
 }
 
 .card1,
 .card2 {
-    width: 790px;
+    width: 100%;
     padding-right: 20px;
     padding-left: 20px;
     padding-bottom: 50px;
@@ -246,51 +238,108 @@ a {
     line-height: 1.30;
 }
 
+footer h4{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+    text-align: center;
+    padding: 6em 2em 2em 2em;
+}
+
+.footer-links{
+    color: #ffffff;
+    font-size: 13px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.footer-links:hover{
+    text-decoration: underline;
+}
+
 
 /*MEDIA QUERIES*/
 
+
+
 @media (max-width: 600px) {
+     .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1em 2em 1em 2em;
+        margin: 0px auto 0.25rem;
+    }
+    .menu li a{
+        font-size: 13px;
+    }
+    .logo-img{
+        width: 60px;
+        height: 60px;
+    }
     .text {
         display: none;
     }
-    .portfolio-container {
+    
+    .portfolio-container, .portfolio-container2{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         margin: 0 auto;
         padding-top: 30px;
-    }
-    .main-section,
-    .projects-section {
-        padding-top: 10px;
+        align-items: center;
+    } 
+
+    
+    .main-section {
+        padding: 8em 2em 0 2em;
+        
     }
     .card1,
     .card2 {
-        width: 350px;
+        width: 100%;
         padding-right: 18px;
         padding-left: 18px;
         padding-bottom: 50px;
-    }
+    } 
 }
 
 
-/*
-  @media (max-width: 1200px) {
-    
-    .text{
+@media (min-width: 481px) and (max-width: 767px) {
+
+    /* CSS */
+    .menu{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1em 2em 1em 2em;
+        margin: 0px auto 0.25rem;
+    }
+    .menu li a{
+        font-size: 13px;
+    }
+    .logo-img{
+        width: 60px;
+        height: 60px;
+    }
+    .text {
         display: none;
     }
-
-    .portfolio-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding-top: 30px;
+    .main-section{
+        padding: 8em 2em 0 2em;
     }
-    .main-section, .projects-section{
-        padding-top: 100px;
-    }
-  }
+    
+    
+}
 
-  */
+
+
+@media (max-width: 800px) {
+    .main-container {
+      flex-direction: column;
+    }
+    
+}
