@@ -266,7 +266,7 @@ div.links{
     font-weight: 400;
 }
 footer h4{
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
@@ -275,7 +275,7 @@ footer h4{
 }
 
 .footer-links{
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
