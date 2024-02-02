@@ -91,6 +91,7 @@ a {
 }
 
 
+
 /* MAIN SECTION */
 
 .wrapper {
@@ -259,7 +260,7 @@ a {
 div.links{
     text-align: center;
     padding-bottom: 2em;
-    color: #ffffff;
+    color: var(--primary-color);
     font-size: 13px;
     line-height: 20px;
     font-weight: 400;
@@ -285,17 +286,24 @@ footer h4{
     text-decoration: underline;
 }
 
-hr{
+.divider{
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ffffff21;
+    border-top: 1px solid var(--primary-color);
     margin: 1em 4em;
     padding: 0;
+    opacity: 20%;
 }
 
 /* SECTION WORK */
 
+/* LEGAL */
+
+.text-legal, .links, .footer-links {
+    color: var(--primary-color);
+
+}
 
 
 
