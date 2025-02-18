@@ -30,7 +30,6 @@ a {
 }
 
 
-
 .header-container {
     background-color: rgb(29 30 37 / 5%);
     width: 100%;
@@ -176,8 +175,7 @@ a {
 
 .section-title {
     color: var(--primary-color);
-    padding-top: 30px;
-    padding-left: 20px;
+    padding: 30px 0 30px 0;
     font-size: 28px;
     font-family: 'Work Sans', sans-serif;
 }
@@ -271,7 +269,7 @@ footer h4{
     line-height: 20px;
     font-weight: 400;
     text-align: center;
-    padding-top: 2em;
+    padding-top: 1em;
 }
 
 .footer-links{
@@ -300,16 +298,179 @@ footer h4{
 
 /* LEGAL */
 
+
+.legal{
+    text-align: center;
+}
+
 .text-legal, .links, .footer-links {
     color: var(--primary-color);
+    text-align: center;
+}
 
+.hurricane-regular {
+    font-family: "Hurricane", serif;
+    font-weight: 400;
+    font-style: normal;
+    color: var(--primary-color);
+    font-size: 36px;
+}
+
+
+/* SECTION ABOUT */
+
+
+.about-intro{
+    padding-top: 186px;  
+    padding-right: 32px;
+    padding-left: 32px;  
+}
+.about{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 35px;
+}
+
+.about-img{
+    width: 40%;
+}
+
+h2, h3{
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 26px;
+}
+.about-text{
+    /* padding: 32px; */
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 0px 0px 0px 32px;
+}
+
+.about-personal{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding-top: 50px;
+    padding-right: 32px;
+    padding-left: 32px;
+    padding-bottom: 100px;
+}
+
+.personal1, .personal2{
+    width: 50%;
+    color: var(--primary-color);
+    font-size: 18px;
+    padding: 0 0 0 32px;
+}
+
+
+/* WORK 3 */
+
+
+.work3-images{
+    display: flex;
+    align-items: flex-start;
+    padding-top: 9em;
+}
+.work3-images1, .work3-images2{
+    width: 90%;
+    margin: auto;
+}
+
+.work3-about{
+    color: var(--primary-color);
+    font-size: 16px;
+    padding: 26px 56px 26px 56px;
+}
+
+.work3-text{
+    padding-bottom: 10px;
+}
+
+
+/* WORK 3 GALLERY */
+
+.album .responsive-container-block {
+    min-height: 75px;
+    height: fit-content;
+    width: 100%;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0px;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    justify-content: flex-start;
+}
+
+.album .responsive-container-block.bg {
+    max-width: 100%;
+    margin: 0 0 0 0;
+    justify-content: space-between;
+    padding: 10px 50px 10px 50px;
+}
+
+.album .img {
+    width: 100%;
+    margin: 0 0 20px 0;
+}
+
+.album #i9rb {
+    color: black;
+}
+
+.album #ir6i {
+    color: black;
+}
+
+.album #ikz3b {
+    color: black;
+}
+
+.album .responsive-container-block.img-cont {
+    flex-direction: column;
+    max-width: 33.3%;
+    min-height: auto;
+    margin: 0 0 0 0;
+    height: 100%;
+}
+
+.album #ipix {
+    color: black;
+}
+
+.album #ipzoh {
+    color: black;
+}
+
+.album #ig5q8 {
+    color: black;
+}
+
+.album #imtzl {
+    color: black;
+}
+
+.album #i53es {
+    color: black;
+}
+
+.album .img.img-big {
+    height: 50%;
+    margin: 0 0 16px 0;
 }
 
 
 
-
 /*MEDIA QUERIES*/
-
 
 
 @media (max-width: 600px) {
@@ -337,7 +498,7 @@ footer h4{
         flex-direction: column;
         justify-content: space-around;
         margin: 0 auto;
-        padding-top: 30px;
+        padding-top: 0px;
         align-items: center;
     } 
     
@@ -351,7 +512,65 @@ footer h4{
         padding-right: 18px;
         padding-left: 18px;
         padding-bottom: 50px;
-    } 
+    }
+    .about{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text{
+        padding: 32px 0 0 0;
+    }
+    .about-img{
+        width: 100%;
+    }
+    .about-personal{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 32px 50px 32px;
+    }
+    .personal1,.personal2{
+        width: 100%;
+        padding: 32px 0 0 0;
+    }
+    .personal2{
+        padding: 32px 0 0 0;
+    }
+    
+    /* gallery */
+
+    .album .responsive-container-block.bg {
+        flex-direction: column;
+    }
+    
+    .album .responsive-container-block.img-cont {
+        max-width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .album .img {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
+    
+    .album .responsive-container-block.img-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+    }
+    
+    .album .img.img-big {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
+    
+    .album .img.img-last {
+        margin: 0 0 5px 0;
+    }
 }
 
 
@@ -379,8 +598,41 @@ footer h4{
     .main-section{
         padding: 8em 2em 0 2em;
     }
+    .about{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about-text{
+        padding: 32px 0 0 0;
+    }
+    .about-img{
+        width: 100%;
+    }
+
+
+    /* gallery */
+
+    .album .img {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
     
+    .album .responsive-container-block.img-cont {
+        flex-direction: column;
+        align-items: center;
+        padding: 10px 10px 10px 10px;
+    }
     
+    .album .img.img-big {
+        max-width: 94%;
+        margin: 0 0 25px 0;
+    }
+    
+    .album .img.img-last {
+        margin: 0 0 5px 0;
+    }
 }
 
 
