@@ -18,6 +18,8 @@
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> -->
     <link href="https://fonts.googleapis.com/css2?family=Hurricane&display=swap" rel="stylesheet">
+
+
 </head>
 
 
@@ -31,7 +33,7 @@
             <ul>
                 <li><a href="./">Work</a></li>
                 <li><a href="/about.html">About</a></li>
-                <li><a href="https://drive.google.com/file/d/1a1sRwTC8sV3IHq1-NT9o67ITvPV6NSlV/view?usp=sharing" target="_blank">Resume</a></li>
+                <li><a href="https://drive.google.com/file/d/1Rm8HI5c2YUntrRgXYwrVXFRrfM_8vz6-/view?usp=sharing" target="_blank">Resume</a></li>
                 <li><a href="mailto:auraservants@gmail.com">Contact</a></li>
                 <li><img src="/images/sun (1).png" alt="sun icon" class="icon" id="icon"></li>
             </ul>
@@ -69,7 +71,7 @@
 
                 <div class="card2">
                     <a href="/bairez.html"><img src="/images/bairez-mailing-responsive.jpg" alt="" class="card-cover"></a>
-                    <a href="/bairez.html"><h3 class="card-title">Email Marketing</h3></a>
+                    <a href="/bairez.html"><h3 class="card-title">Bairez</h3></a>
                     <span class="card-tags">email design - templates - marketing</span>
                     <p class="card-description">This project focused on the design and development of a responsive email marketing template for Bairez, a jewelry brand. The email layout was carefully structured to maintain a luxurious and elegant aesthetic, aligning with the brand's identity.
                     </p>
@@ -81,45 +83,43 @@
 
                 <div class="card1">
                     <a href="/marginal.html"><img src="/images/branding-marginal.jpg" alt="marginal branding" class="card-cover"></a>
-                    <a href="/marginal.html"><h3 class="card-title">Marginal Branding</h3></a>
+                    <a href="/marginal.html"><h3 class="card-title">Marginal</h3></a>
                     <span class="card-tags">brand - product design - visual identity</span>
                     <p class="card-description">
                         Marginal is a bold and disruptive coffee brand that embraces a skater-surfer counterculture aesthetic. It breaks traditional norms with a rebellious yet stylish identity, reflected in its visual elements, typography, and messaging.
                     </p>
                 </div>
 
+                <div class="card2">
+                    <a href="/pfizer.html"><img src="/images/pfizer-1.png" alt="pfizer" class="card-cover"></a>
+                    <a href="/pfizer.html"><h3 class="card-title">Pfizer</h3></a>
+                    <span class="card-tags">Banner design - google ads - animation</span>
+                    <p class="card-description">A set of clean, Pfizer-branded google display banners designed to raise awareness about pneumococcal pneumonia risk in adults with asthma.
+                    </p>
+                </div>
+                
+            </div>
+
+            <div class="portfolio-container">
+
+                <div class="card1">
+                    <a href="/kyndryl.html"><img src="/images/kyndryl-project.png" alt="" class="card-cover"></a>
+                    <a href="/kyndryl.html"><h3 class="card-title">Kyndryl</h3></a>
+                    <span class="card-tags">Email development - digital design - socials</span>
+                    <p class="card-description">Kyndryl is a comprehensive digital design and development project showcasing six months of work for the brand, including marketing materials, social media assets and the design and development of responsive HTML/CSS email templates.
+                    </p>
+                </div>
+
 
                 <div class="card2">
                     <img src="/images/mr-storage-display.jpg" alt="" class="card-cover">
-                    <h3 class="card-title">Google Ads displays</h3>
-                    <span class="card-tags">paid media - google ads - ads design</span>
+                    <h3 class="card-title">Mr. Storage</h3>
+                    <span class="card-tags">paid media - google ads - banner ads design</span>
                     <p class="card-description">This project consists of the design, animation, and adaptation of Google Ads display banners for Mr. Storage, a company specializing in warehouse rentals. The goal was to create visually engaging ads that effectively communicate the brand’s message and drive conversions.</p>
                 </div>
 
+
             </div>
-
-            <!-- <div class="portfolio-container">
-
-                <div class="card1">
-                    <img src="/images/social-philips2.jpg" alt="" class="card-cover">
-                    <a href="/work1.html"><h3 class="card-title">Phillips</h3></a>
-                    <span class="card-tags">socials - instagram - marketing</span>
-                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur illo, exercitationem, quis repellat, ab provident deserunt officia iure cupiditate dignissimos reiciendis modi voluptas aperiam velit! Asperiores expedita ipsam
-                        nemo.
-                    </p>
-                </div>
-
-
-                <div class="card2">
-                    <img src="/images/social-philips.jpg" alt="" class="card-cover">
-                    <h3 class="card-title">Social Media</h3>
-                    <span class="card-tags">Socials - instagram - design</span>
-                    <p class="card-description">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed pariatur illo, exercitationem, quis repellat, ab provident deserunt officia iure cupiditate dignissimos reiciendis modi voluptas aperiam velit! Asperiores expedita ipsam
-                        nemo.
-                    </p>
-                </div>
-
-            </div> -->
         </section>
     </div>
 
@@ -139,17 +139,33 @@
     </footer>
     </div>
 
-    <script>
+    <!-- <script>
         var icon = document.getElementById("icon");
+
+        if (localStorage.getItem("theme") === "light") {
+        document.body.classList.add("light-theme");
+        icon.src = "/images/moon.png";
+        } else {
+            document.body.classList.remove("light-theme");
+            icon.src = "/images/sun (1).png";
+        }
+
+
         icon.onclick = function() {
             document.body.classList.toggle("light-theme");
+
             if (document.body.classList.contains("light-theme")) {
                 icon.src = "/images/moon.png";
+                localStorage.setItem("theme", "light");
             } else {
-                icon.src = "/images/sun (1).png"
+                icon.src = "/images/sun (1).png";
+                localStorage.setItem("theme", "dark");
             }
         }
-    </script>
+
+
+    </script> -->
+    <script src="theme.js"></script>
 </body>
 
 </html>

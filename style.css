@@ -31,7 +31,7 @@ a {
 
 
 .header-container {
-    background-color: rgb(29 30 37 / 5%);
+    background-color: rgb(29 30 37 / 1%);
     width: 100%;
     backdrop-filter: saturate(130%) blur(35px);
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0);
@@ -466,6 +466,11 @@ h2, h3{
 .album .img.img-big {
     height: 50%;
     margin: 0 0 16px 0;
+}
+
+.img-centered{
+    display: block;
+    margin: auto;
 }
 
 
